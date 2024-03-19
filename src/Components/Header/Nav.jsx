@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Navbar from "./Navbar";
+import { CiMenuBurger} from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
 
 const Nav = () => {
+
+    const [open, setOpen] = useState(false)
 
     const routes = [
         { id: 1, name: "Home", path: "/" },
@@ -14,9 +19,18 @@ const Nav = () => {
 
     return (
         <nav>
-            <div className="">
-                <ul className="md:flex gap-10">
+            <div className="md:hidden text-xl p-3" onClick={() => setOpen(!open)}>
                 {
+                    open === true ? <IoMdClose ></IoMdClose> : <CiMenuBurger></CiMenuBurger>
+                }
+                
+                
+            </div>
+
+            <div className="md:flex justify-center p-5">
+                <ul className={`md:flex gap-10 absolute md:static px-4 duration-1000  ${open ? 'top-16' : '-top-40'}`}>
+                {
+                    
                     routes.map(route => <Navbar key={route.id} list={route}></Navbar>)
                 }
                 </ul>

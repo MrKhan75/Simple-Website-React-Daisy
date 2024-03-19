@@ -7,7 +7,7 @@ const Navbar = ({list}) => {
             <nav>
                 <div className="">
                     <ul className="md:flex gap-10">
-                        <li><a className="uppercase" href={path}>{name}</a></li>
+                        <li className='hover:bg-pink-400 hover:text-white p-1 hover:duration-300 hover:rounded-md hover:p-1'><a className="uppercase" href={path}>{name}</a></li>
                     </ul>
                 </div>
             </nav>
