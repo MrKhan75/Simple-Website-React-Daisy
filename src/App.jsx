@@ -1,6 +1,7 @@
 import './App.css';
 import Nav from './Components/Header/Nav';
 import Hero from './Components/Header/Hero';
+import Price from './Components/Main/PriceOption/Price';
 
 function App() {
   
@@ -13,6 +14,9 @@ function App() {
             <Nav></Nav>
             <Hero></Hero>
           </div> 
+          <div>
+              <Price></Price>
+          </div>
           
       </div>
     </>

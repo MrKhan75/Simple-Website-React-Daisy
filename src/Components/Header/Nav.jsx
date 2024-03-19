@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Navbar";
 import { CiMenuBurger} from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import SinglePrice from "../Main/PriceOption/SinglePrice";
 
 const Nav = () => {
 
@@ -36,6 +37,8 @@ const Nav = () => {
                 </ul>
             </div>
         </nav>
+
+        
     );
 };
 
