@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './Components/Header/Nav';
 import Hero from './Components/Header/Hero';
 import Price from './Components/Main/PriceOption/Price';
+import Chart from './Components/Main/Chart/Chart';
 
 function App() {
   
@@ -17,7 +18,7 @@ function App() {
           <div>
               <Price></Price>
           </div>
-          
+          <Chart></Chart>
       </div>
     </>
   )
